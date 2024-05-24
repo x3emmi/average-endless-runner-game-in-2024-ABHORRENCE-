@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Player.AddForce(Vector3.up * 10, ForceMode2D.Impulse);
-        }
     
+        }
+
     }
 }
