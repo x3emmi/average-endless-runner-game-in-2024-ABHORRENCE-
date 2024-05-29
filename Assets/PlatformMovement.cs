@@ -14,5 +14,11 @@ public class PlatformMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(new Vector2(-1, 0) * Time.deltaTime * 5);
+
+        if(transform.position.x < -10.3f)
+        {
+
+        Destroy(gameObject);
+        }
     }
 }
